@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Syllabus</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .department-selector {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .department-selector label {
+      font-size: 1.2em;
+    }
+
+    .syllabus-content {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+
+    .syllabus-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .syllabus-item {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>University Syllabus</h1>
+  </header>
+
+  <div class="container">
+    <div class="department-selector">
+      <label for="art">Art Department</label>
+      <input type="radio" name="department" id="art" onclick="showSyllabus('art')">
+
+      <label for="commerce">Commerce Department</label>
+      <input type="radio" name="department" id="commerce" onclick="showSyllabus('commerce')">
+
+      <label for="science">Science Department</label>
+      <input type="radio" name="department" id="science" onclick="showSyllabus('science')">
+    </div>
+
+    <div class="syllabus-content" id="artSyllabus">
+      <h2>Art Department Syllabus</h2>
+      <ul class="syllabus-list">
+        <li class="syllabus-item">Art History</li>
+        <li class="syllabus-item">Drawing Techniques</li>
+        <li class="syllabus-item">Sculpture</li>
+        <!-- Add more syllabus items as needed -->
+      </ul>
+    </div>
+
+    <div class="syllabus-content" id="commerceSyllabus">
+      <h2>Commerce Department Syllabus</h2>
+      <ul class="syllabus-list">
+        <li class="syllabus-item">Accounting Principles</li>
+        <li class="syllabus-item">Business Ethics</li>
+        <li class="syllabus-item">Marketing Strategies</li>
+        <!-- Add more syllabus items as needed -->
+      </ul>
+    </div>
+
+    <div class="syllabus-content" id="scienceSyllabus">
+      <h2>Science Department Syllabus</h2>
+      <ul class="syllabus-list">
+        <li class="syllabus-item">Physics Fundamentals</li>
+        <li class="syllabus-item">Chemistry Lab Techniques</li>
+        <li class="syllabus-item">Biology Concepts</li>
+        <!-- Add more syllabus items as needed -->
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function showSyllabus(department) {
+      var syllabusContents = document.getElementsByClassName('syllabus-content');
+      for (var i = 0; i < syllabusContents.length; i++) {
+        syllabusContents[i].classList.remove('active');
+      }
+
+      document.getElementById(department + 'Syllabus').classList.add('active');
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Departments</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .department {
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    .department-info {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>University Departments</h1>
+  </header>
+
+  <div class="container">
+    <div class="department">
+      <h2>Art Department</h2>
+      
+      <div class="gallery" id="artGallery">
+        <!-- Art Department Gallery Images -->
+        <img src="../asset 2.0/image/id1.jpg" alt="Art Image 1" onclick="showInfo('art', 1)">
+        <img src="../asset 2.0/image/Wd1.jpg" alt="Art Image 2" onclick="showInfo('art', 2)">
+        <img src="../asset 2.0/image/ws1.jpg" alt="Art Image 2" onclick="showInfo('art', 2)">
+        <!-- Add more images as needed -->
+      </div>
+      <div class="department-info" id="artInfo"></div>
+      <p>The Department of Political Science offers graduate and postgraduate courses for students interested in learning about the political world around them, and to students seeking career options in government and related fields. The department was set up in the year 1992 with the establishment of the college. The department offers students an undergraduate specialization course - B.A. Political Science. The teaching-learning at the department aims to provide students with a rich and rewarding learning experience, one that sharpens their critical skills, engages them in political ideas and practices, and grounds them in the world, locally and globally. Students are encouraged to participate in multifarious activities and intercollegiate competitions. The post-graduate programme, M.A. Political Science was started in the academic year 2014-2015. </p>
+    </div>
+    <hr>
+
+    <div class="department">
+      <h2>Commerce Department</h2>
+      <div class="gallery" id="commerceGallery">
+        <!-- Commerce Department Gallery Images -->
+        <img src="../asset 2.0/image/FreshersParty.jpg" alt="Commerce Image 1" onclick="showInfo('commerce', 1)">
+        <img src="../asset 2.0/image/PosterModel.jpg" alt="Commerce Image 2" onclick="showInfo('commerce', 2)">
+        <img src="../asset 2.0/image/PTA.jpg" alt="Commerce Image 2" onclick="showInfo('commerce', 2)">
+        <!-- Add more images as needed -->
+      </div>
+      <div class="department-info" id="commerceInfo"></div>
+      <p>The Department of Computer Application was established in 2005 and has recorded a remarkable growth within a very short period of time. The faculty comprises experienced, qualified and highly-motivated teachers. The Department has modern, well-equipped computer laboratories and ICT-enabled classrooms. Students are also provided extended support by means of placements in reputed I.T companies. For the betterment of students, Department of Computer Application organizes activities like Fresher’s Party, Lecture Series, seminars by Experts from industry, Sports Competitions, Computer week, Industrial Visits, B.C.A FIESTA , Celebration of days (formal day, mismatch day, twin’s day, retro day and traditional day), Orphanage Visits, Farewell Party, etc </p>
+    </div>
+   <hr>
+    <div class="department">
+      <h2>Science Department</h2>
+      <div class="gallery" id="scienceGallery">
+        <!-- Science Department Gallery Images -->
+        <img src="../asset 2.0/image/science1.jpg" alt="Science Image 1" onclick="showInfo('science', 1)">
+        <img src="../asset 2.0/image/science2.jpg" alt="Science Image 2" onclick="showInfo('science', 2)">
+        <img src="../asset 2.0/image/science3.jpg" alt="Science Image 2" onclick="showInfo('science', 2)">
+        <!-- Add more images as needed -->
+      </div>
+      <div class="department-info" id="scienceInfo"></div>
+    </div>
+    <p>The Department of Chemistry and Post-Graduate Research Center has been involved in teaching Undergraduate students since 1992 and Post Graduate courses in Chemistry since 2002. For the overall development of students, the Chemistry Department conducts various co-curricular activities like Chem-Quiz, Chem-Fest, Science Day, Industrial Visits, Social Rallies, Orphanage Visits, Blood Donation Camps, Lecture Competitions. It also organizes guest lectures by eminent scientists. The Department is a recognized Research Center in Chemistry affiliated to Savitribai Phule Pune University for Ph.D since 2004. Eight students have been awarded a Ph. D. degree and currently nine students are pursuing their doctoral degree. The department has well-equipped laboratories with high-tech instruments like the Flash Chromatogram, HPLC, GC, FTIR, UV-visible spectrophotometer, Cyclic voltameter, Spectrophotoflourimeter, Thermogravimetric analyzer and microwave synthesizer. In an effort to promote interdisciplinary research, the Department has recently set up the Advanced Scientific Laboratory (ASR Lab) fitted with a CO2 incubator, ELISA reader, Bio-Safety Cabinet, Ultra Centrifuge and Deep Freezer. Adding to its profile, the Postgraduate and Research Centre in Chemistry has signed MoUs with reputed international and national institutes to promote collaborative research. The Department has successfully organized 03 International Conferences on “Herbal and Synthetic Drug Studies (HSDS-2010, HSDS-2014 and HSDS-2016) and 01 International seminar on New Horizons in Cancer Research (NHCR-2015). It has several ongoing research projects with international laboratories. The faculty members have published over 50 research papers in international and national journals. Research grants of more than rupees Forty lac have been sanctioned by various funding agencies viz. UGC and BCUD, Savitribai Phule Pune University. The Department of Chemistry has played a key role in obtaining the DST-FIST 0-Level Grant from the Department of Science and Technology, Government of India. An amount of Rs. 92,50,000/- has been sanctioned to the college. Under the aegis of the DST-FIST Funding Scheme, an Animal Tissue Culture Laboratory namely the Advanced Scientific Research Laboratory (ASR LAB) has been developed.</p>
+  </div>
+<hr>
+<hr>
+<h3 style="color: RED;"><marquee>THANK YOU FOR VISITING</marquee></h3>
+  <script>
+    function showInfo(department, imageNumber) {
+      var infoDiv = document.getElementById(department + 'Info');
+      infoDiv.innerHTML = 'Image ' + imageNumber + ' description goes here.';
+    }
+  </script>
+
+</body>
+</html>

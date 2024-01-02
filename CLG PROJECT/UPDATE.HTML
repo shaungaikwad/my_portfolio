@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University News and Updates</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-item {
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .news-title {
+      font-size: 1.2em;
+      color: #007bff;
+    }
+
+    .news-date {
+      color: #555;
+    }
+
+    .news-description {
+      display: none;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>University News and Updates</h1>
+  </header>
+
+  <div class="container">
+    <div class="news-item" onclick="toggleDescription('news1')">
+      <div class="news-title">New Academic Year Commences</div>
+      <div class="news-date">January 1, 2024</div>
+      <div class="news-description" id="news1">
+        <p>The university is excited to welcome students for the start of a new academic year. We wish everyone a successful and productive semester!</p>
+      </div>
+    </div>
+
+    <div class="news-item" onclick="toggleDescription('news2')">
+      <div class="news-title">Research Symposium Announcement</div>
+      <div class="news-date">January 15, 2024</div>
+      <div class="news-description" id="news2">
+        <p>The university will host a research symposium on January 15, 2024. Researchers and students are invited to showcase their work and discoveries.</p>
+      </div>
+    </div>
+
+    <!-- Add more news items as needed -->
+
+  </div>
+
+  <script>
+    function toggleDescription(newsId) {
+      var description = document.getElementById(newsId);
+      description.style.display = (description.style.display === 'none' || description.style.display === '') ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>

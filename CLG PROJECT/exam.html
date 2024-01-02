@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examination Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #007bff;
+    }
+
+    .section {
+      margin-top: 20px;
+    }
+
+    .exam-form-details {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 20px;
+    }
+
+    .upcoming-exams {
+      margin-top: 20px;
+    }
+
+    .seat-list {
+      margin-top: 20px;
+    }
+
+    .form-filling-details {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Examination Portal</h2>
+
+    <div class="section exam-form-details">
+      <h3>Examination Form Details</h3>
+      <p>Form ID: <span id="formId">12345</span></p>
+      <p>Exam Date: <span id="examDate">January 15, 2024</span></p>
+    </div>
+
+    <div class="section upcoming-exams">
+      <h3>Upcoming Exams</h3>
+      <ul>
+        <li>Mathematics - January 20, 2024</li>
+        <li>Science - January 25, 2024</li>
+        <!-- Add more upcoming exams as needed -->
+      </ul>
+    </div>
+
+    <div class="section seat-list">
+      <h3>Seat List</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Seat Number</th>
+            <th>Student Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>101</td>
+            <td>Shaun Gaikwad</td>
+          </tr>
+          <tr>
+            <td>102</td>
+            <td>Venkatramana Shrinu Adi</td>
+          </tr>
+          <!-- Add more seat details as needed -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section form-filling-details">
+      <h3>Form Filling Details</h3>
+      <p>Status: <span id="formStatus">Completed</span></p>
+      <p>Payment Status: <span id="paymentStatus">Paid</span></p>
+    </div>
+  </div>
+
+  <script>
+    // Dummy data for demonstration purposes
+    document.getElementById('formId').innerText = '12345';
+    document.getElementById('examDate').innerText = 'January 15, 2024';
+    document.getElementById('formStatus').innerText = 'Completed';
+    document.getElementById('paymentStatus').innerText = 'Paid';
+  </script>
+
+</body>
+</html>
